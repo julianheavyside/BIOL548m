@@ -1,0 +1,22 @@
+---
+title: "Population demographics modelling using the `popbio` R package"
+author: "Julian Heavyside"
+date: "October 15, 2017"
+output: 
+  github_document:
+    toc: true
+---
+
+### Using the `popbio` package to work with some teasel data from Werner and Caswell
+
+```{r, echo=FALSE}
+suppressPackageStartupMessages(library(tidyverse))
+suppressPackageStartupMessages(library(popbio))
+```
+
+The `teasel` dataset can be loaded from the `popbio` library. The data are simply the transition and fertility matrices from the teasel experiment
+```{r}
+data("teasel")
+knitr::kable(teasel)
+```
+
